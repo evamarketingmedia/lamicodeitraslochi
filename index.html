@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="L'amico dei traslochi in Ticino e in tutta la Svizzera - Non una ditta qualsiasi, una persona di fiducia. Traslochi residenziali e aziendali a Lugano, Bellinzona, Locarno e in tutta la Svizzera. Preventivo gratuito, nessuna sorpresa.">
+<meta name="keywords" content="trasloco ticino, traslochi svizzera, traslochi lugano, traslochi bellinzona, traslochi locarno, sgombero ticino, imballaggio trasloco, deposito mobili ticino">
+<meta name="robots" content="index, follow">
+<title>L'amico dei traslochi | Traslochi professionali in Ticino e tutta la Svizzera</title>
+<link rel="canonical" href="https://www.lamicodetraslochi.ch/">
+<!-- Open Graph -->
+<meta property="og:title" content="L'amico dei traslochi | Traslochi professionali in Ticino e Svizzera">
+<meta property="og:description" content="Traslochi rapidi, sicuri e convenienti in tutto il Canton Ticino e in tutta la Svizzera. Preventivo gratuito senza impegno.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_CH">
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MovingCompany",
+  "name": "L'amico dei traslochi",
+  "description": "Servizi di trasloco professionale in Ticino e in tutta la Svizzera",
+  "areaServed": ["Lugano", "Bellinzona", "Locarno", "Mendrisio", "Ticino", "Svizzera"],
+  "telephone": "+41762644543",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "Ticino",
+    "addressCountry": "CH"
+  },
+  "priceRange": "CHF"
+}
+</script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --orange: #E8621A;
+    --orange-dark: #C04E0F;
+    --orange-light: #F5824A;
+    --blue: #1B6FA8;
+    --blue-dark: #124E78;
+    --blue-light: #3A8EC4;
+    --sky: #D6EAF8;
+    --yellow: #F5C842;
+    --white: #FFFFFF;
+    --off-white: #F8F9FA;
+    --gray-light: #EDF2F7;
+    --gray: #718096;
+    --gray-dark: #2D3748;
+    --text: #1A202C;
+    --radius: 12px;
+    --shadow: 0 4px 24px rgba(0,0,0,0.10);
+    --shadow-lg: 0 8px 40px rgba(0,0,0,0.14);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.6;
+  }
+
+  img { max-width: 100%; }
+
+  a { text-decoration: none; color: inherit; }
+
+  /* ── HEADER ─────────────────────────────── */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--white);
+    border-bottom: 2px solid var(--orange);
+    box-shadow: 0 2px 12px rgba(232,98,26,0.10);
+  }
+
+  .header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+  }
+
+  .logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .logo-img {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+  }
+
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+  }
+
+  .logo-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--orange);
+  }
+
+  .logo-tagline {
+    font-size: 0.7rem;
+    color: var(--blue);
+    font-style: italic;
+  }
+
+  nav { display: flex; gap: 0.25rem; align-items: center; }
+
+  nav a {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--gray-dark);
+    border-radius: 8px;
+    transition: background 0.15s, color 0.15s;
+  }
+
+  nav a:hover { background: var(--gray-light); color: var(--orange); }
+
+  .nav-cta {
+    background: var(--orange) !important;
+    color: var(--white) !important;
+    font-weight: 700 !important;
+    padding: 0.5rem 1.1rem !important;
+    border-radius: 8px !important;
+    transition: background 0.15s !important;
+  }
+
+  .nav-cta:hover { background: var(--orange-dark) !important; }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 4px;
+    background: none;
+    border: none;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--gray-dark);
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  /* ── HERO ─────────────────────────────── */
+  .hero {
+    background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 50%, var(--blue-light) 100%);
+    color: var(--white);
+    padding: 5rem 1.5rem 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: var(--white);
+    clip-path: ellipse(55% 100% at 50% 100%);
+  }
+
+  .hero-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero h1 span { color: var(--yellow); }
+
+  .hero p {
+    font-size: 1.15rem;
+    opacity: 0.9;
+    max-width: 560px;
+    margin: 0 auto 2.5rem;
+  }
+
+  .hero-ctas {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.8rem;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.15s, box-shadow 0.15s;
+    text-decoration: none;
+  }
+
+  .btn:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+
+  .btn-primary {
+    background: var(--orange);
+    color: var(--white);
+  }
+
+  .btn-primary:hover { background: var(--orange-dark); }
+
+  .btn-outline {
+    background: rgba(255,255,255,0.12);
+    color: var(--white);
+    border: 2px solid rgba(255,255,255,0.5);
+  }
+
+  .btn-outline:hover { background: rgba(255,255,255,0.2); }
+
+  .btn-dark {
+    background: var(--blue-dark);
+    color: var(--white);
+  }
+
+  .btn-dark:hover { background: #0e3a59; }
+
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-stat {
+    text-align: center;
+  }
+
+  .hero-stat strong {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--yellow);
+  }
+
+  .hero-stat span {
+    font-size: 0.85rem;
+    opacity: 0.8;
+  }
+
+  /* ── TRUST BAR ─────────────────────────── */
+  .trust-bar {
+    background: var(--off-white);
+    border-bottom: 1px solid #E2E8F0;
+    padding: 1rem 1.5rem;
+  }
+
+  .trust-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+  }
+
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--gray-dark);
+  }
+
+  .trust-item svg { color: var(--orange); flex-shrink: 0; }
+
+  /* ── SECTIONS ─────────────────────────── */
+  section { padding: 5rem 1.5rem; }
+
+  .container { max-width: 1200px; margin: 0 auto; }
+
+  .section-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 0.75rem;
+  }
+
+  .section-title {
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    font-weight: 800;
+    color: var(--gray-dark);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  .section-sub {
+    font-size: 1.05rem;
+    color: var(--gray);
+    max-width: 560px;
+    margin-bottom: 3rem;
+  }
+
+  /* ── SERVIZI ─────────────────────────── */
+  #servizi {
+    background: var(--white);
+    padding-top: 4rem;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 1180px) {
+    .services-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .service-card:nth-child(5) { grid-column: 2; }
+    .service-card:nth-child(6) { grid-column: 3; }
+  }
+
+  .service-card {
+    background: var(--white);
+    border: 1.5px solid #E2E8F0;
+    border-radius: var(--radius);
+    padding: 2rem;
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+    position: relative;
+    overflow: hidden;
+    min-height: 270px;
+  }
+
+  .service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--orange);
+    transform: scaleX(0);
+    transition: transform 0.25s;
+    transform-origin: left;
+  }
+
+  .service-card:hover {
+    border-color: var(--orange-light);
+    box-shadow: var(--shadow);
+    transform: translateY(-3px);
+  }
+
+  .service-card:hover::before { transform: scaleX(1); }
+
+  .service-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 12px;
+    background: #FEF3EC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+    font-size: 1.9rem;
+    line-height: 1;
+  }
+
+  .service-icon svg {
+    width: 28px;
+    height: 28px;
+    color: var(--orange);
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .service-icon span { transform: translateY(-1px); }
+
+  .service-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--gray-dark);
+    margin-bottom: 0.5rem;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
+    color: var(--gray);
+    line-height: 1.6;
+  }
+
+  /* ── COME FUNZIONA ─────────────────────── */
+  #come-funziona { background: var(--off-white); }
+
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    position: relative;
+  }
+
+  .step-card {
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .step-num {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--orange);
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.2rem;
+  }
+
+  .step-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--gray-dark);
+    margin-bottom: 0.5rem;
+  }
+
+  .step-card p {
+    font-size: 0.9rem;
+    color: var(--gray);
+  }
+
+  /* ── PERCHÉ NOI ─────────────────────────── */
+  #perche-noi { background: var(--white); }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .why-features { display: flex; flex-direction: column; gap: 1.5rem; }
+
+  .why-feature {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .why-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: #FEF3EC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .why-icon svg {
+    width: 22px;
+    height: 22px;
+    color: var(--orange);
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .why-feature-text h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--gray-dark);
+    margin-bottom: 0.25rem;
+  }
+
+  .why-feature-text p { font-size: 0.9rem; color: var(--gray); }
+
+  .why-visual {
+    background: linear-gradient(135deg, var(--blue-dark), var(--blue));
+    border-radius: 20px;
+    padding: 3rem 2.5rem;
+    color: var(--white);
+    text-align: center;
+  }
+
+  .why-visual-logo {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
+  }
+
+  .why-visual h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+  }
+
+  .why-visual p { opacity: 0.85; font-size: 0.95rem; }
+
+  .why-visual-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .why-visual-stat {
+    background: rgba(255,255,255,0.12);
+    border-radius: 10px;
+    padding: 1rem;
+  }
+
+  .why-visual-stat strong {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--yellow);
+  }
+
+  .why-visual-stat span { font-size: 0.8rem; opacity: 0.85; }
+
+  /* ── ZONE ─────────────────────────────── */
+  #zone { background: var(--off-white); }
+
+  .zone-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 2.5rem;
+  }
+
+  .zone-card {
+    background: var(--white);
+    border: 1.5px solid #E2E8F0;
+    border-radius: 10px;
+    padding: 1.25rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--gray-dark);
+    transition: border-color 0.2s, transform 0.2s;
+  }
+
+  .zone-card:hover {
+    border-color: var(--orange);
+    transform: translateY(-2px);
+  }
+
+  .zone-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--orange);
+    flex-shrink: 0;
+  }
+
+  /* ── TESTIMONIANZE ─────────────────────── */
+  #testimonianze { background: var(--white); }
+
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .review-card {
+    background: var(--off-white);
+    border-radius: var(--radius);
+    padding: 1.75rem;
+    border: 1px solid #E2E8F0;
+  }
+
+  .stars {
+    display: flex;
+    gap: 3px;
+    margin-bottom: 1rem;
+  }
+
+  .star { color: var(--yellow); font-size: 1.1rem; }
+
+  .review-card blockquote {
+    font-size: 0.95rem;
+    color: var(--gray-dark);
+    line-height: 1.65;
+    margin-bottom: 1.25rem;
+    font-style: italic;
+  }
+
+  .reviewer {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .reviewer-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--orange);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .reviewer-info strong { display: block; font-size: 0.9rem; color: var(--gray-dark); }
+  .reviewer-info span { font-size: 0.8rem; color: var(--gray); }
+
+  /* ── CONTATTI / CTA ─────────────────────── */
+  #contatti {
+    background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 100%);
+    color: var(--white);
+    text-align: center;
+    padding: 6rem 1.5rem;
+  }
+
+  #contatti .section-label { color: var(--yellow); }
+  #contatti .section-title { color: var(--white); }
+  #contatti .section-sub { color: rgba(255,255,255,0.8); max-width: 600px; margin-left: auto; margin-right: auto; }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 3rem auto;
+  }
+
+  .contact-card {
+    background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: var(--radius);
+    padding: 1.75rem 1.5rem;
+    text-align: center;
+    transition: background 0.2s;
+  }
+
+  .contact-card:hover { background: rgba(255,255,255,0.18); }
+
+  .contact-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+  }
+
+  .contact-card-icon svg {
+    width: 24px; height: 24px;
+    fill: none; stroke: var(--yellow);
+    stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+  }
+
+  .contact-card strong { display: block; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.7; margin-bottom: 0.4rem; }
+  .contact-card a, .contact-card span { color: var(--white); font-size: 1.05rem; font-weight: 700; }
+
+  .form-section {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    text-align: left;
+  }
+
+  .form-section h3 {
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .form-group { margin-bottom: 1rem; }
+
+  .form-group label {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.03em;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.25);
+    background: rgba(255,255,255,0.10);
+    color: var(--white);
+    font-size: 0.95rem;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .form-group input::placeholder,
+  .form-group select::placeholder,
+  .form-group textarea::placeholder { color: rgba(255,255,255,0.4); }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus { border-color: var(--yellow); }
+
+  .form-group select option { background: var(--blue-dark); color: var(--white); }
+
+  .form-group textarea { resize: vertical; min-height: 100px; }
+
+  .form-submit {
+    width: 100%;
+    padding: 1rem;
+    background: var(--orange);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    margin-top: 0.5rem;
+  }
+
+  .form-submit:hover { background: var(--orange-dark); transform: translateY(-1px); }
+
+  /* ── WHATSAPP FLOAT ─────────────────────── */
+  .whatsapp-float {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 200;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #25D366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.45);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .whatsapp-float:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 28px rgba(37,211,102,0.55);
+  }
+
+  .whatsapp-float svg { width: 30px; height: 30px; fill: white; }
+
+  /* ── FOOTER ─────────────────────────────── */
+  footer {
+    background: #0F1923;
+    color: rgba(255,255,255,0.75);
+    padding: 3rem 1.5rem 1.5rem;
+  }
+
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 3rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .footer-brand { }
+
+  .footer-logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+
+  .footer-logo-img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+  }
+
+  .footer-brand-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--orange);
+  }
+
+  .footer-brand p { font-size: 0.88rem; line-height: 1.65; }
+
+  .footer-col h4 {
+    color: var(--white);
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .footer-col ul { list-style: none; }
+
+  .footer-col ul li { margin-bottom: 0.5rem; }
+
+  .footer-col ul li a {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.65);
+    transition: color 0.15s;
+  }
+
+  .footer-col ul li a:hover { color: var(--orange); }
+
+  .footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  /* ── RESPONSIVE ─────────────────────────── */
+  @media (max-width: 768px) {
+    nav { display: none; }
+    .hamburger { display: flex; }
+
+    nav.open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 72px;
+      left: 0;
+      right: 0;
+      background: var(--white);
+      border-bottom: 2px solid var(--orange);
+      padding: 1rem;
+      gap: 0.25rem;
+      box-shadow: var(--shadow);
+    }
+
+    .why-grid { grid-template-columns: 1fr; }
+    .why-visual { order: -1; }
+
+    .form-row { grid-template-columns: 1fr; }
+
+    .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+
+    .footer-bottom { flex-direction: column; text-align: center; }
+
+    .hero { padding: 3.5rem 1.5rem 3rem; }
+
+    #servizi { padding-top: 3rem; }
+
+    .services-grid {
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+
+    .service-card {
+      min-height: auto;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo-wrap" aria-label="L'amico dei traslochi – home">
+      <img src="logo.png" alt="Logo L'amico dei traslochi" class="logo-img" onerror="this.style.display='none'">
+      <div class="logo-text">
+        <span class="logo-name">L'amico dei traslochi</span>
+        <span class="logo-tagline">Professionalità con il sorriso</span>
+      </div>
+    </a>
+    <nav id="main-nav">
+      <a href="#servizi">Servizi</a>
+      <a href="#come-funziona">Come funziona</a>
+      <a href="#perche-noi">Chi siamo</a>
+      <a href="#zone">Zone</a>
+      <a href="#testimonianze">Recensioni</a>
+      <a href="#contatti" class="nav-cta">Preventivo gratuito</a>
+    </nav>
+    <button class="hamburger" aria-label="Apri menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-badge">🏔️ Specialisti in Ticino, operativi in tutta la Svizzera</div>
+  <h1>Gli altri fanno traslochi.<br><span>Noi siamo l'amico che ti aiuta a traslocare.</span></h1>
+  <p>Con un amico accanto, anche il trasloco più pesante diventa leggero. Professionalità, cura e il sorriso di chi ci tiene davvero.</p>
+  <div class="hero-ctas">
+    <a href="#contatti" class="btn btn-primary">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+      Richiedi preventivo
+    </a>
+    <a href="https://wa.me/41762644543?text=Buongiorno!%20ho%20trovato%20il%20vostro%20sito%20e%20vorrei%20un%20preventivo%20per%20un%20trasloco.%0A%0A-%20Partenza%3A%0A-%20Destinazione%3A%0A-%20Data%20indicativa%3A%0A-%20Tipo%20di%20abitazione%3A%0A-%20Note%3A" class="btn btn-outline" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.106.549 4.083 1.506 5.805L0 24l6.332-1.479A11.951 11.951 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.925 0-3.72-.521-5.261-1.428l-.374-.222-3.882.907.952-3.778-.243-.388A9.79 9.79 0 012.182 12C2.182 6.592 6.592 2.182 12 2.182c5.408 0 9.818 4.41 9.818 9.818 0 5.408-4.41 9.818-9.818 9.818z"/></svg>
+      WhatsApp diretto
+    </a>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat"><strong>500+</strong><span>traslochi completati</span></div>
+    <div class="hero-stat"><strong>10+</strong><span>anni di esperienza</span></div>
+    <div class="hero-stat"><strong>4.9★</strong><span>valutazione media</span></div>
+    <div class="hero-stat"><strong>24h</strong><span>preventivo garantito</span></div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      Massima cura dei tuoi beni
+    </div>
+    <div class="trust-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      Preventivo gratuito
+    </div>
+    <div class="trust-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      Nessun costo nascosto
+    </div>
+    <div class="trust-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      Team professionale
+    </div>
+    <div class="trust-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      Operativi in tutta la Svizzera
+    </div>
+  </div>
+</div>
+
+<!-- SLOGAN STRIP -->
+<div style="background: var(--orange); color: #fff; padding: 1.1rem 1.5rem; text-align: center;">
+  <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; font-weight: 700; font-size: 0.95rem; letter-spacing: 0.02em;">
+    <span>👋 Un amico, non un numero verde</span>
+    <span>📦 Il tuo divano è al sicuro come se fosse il nostro</span>
+    <span>🤝 Ti diciamo il prezzo vero, non quello che vuoi sentire</span>
+  </div>
+</div>
+
+<section id="servizi">
+  <div class="container">
+    <div class="section-label">I nostri servizi</div>
+    <h2 class="section-title">Un amico per ogni<br>esigenza di trasloco</h2>
+    <p class="section-sub">Da un appartamento a un ufficio intero: ci occupiamo di tutto noi, così tu pensi solo alla nuova casa.</p>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon">
+          <span aria-hidden="true">🚚</span>
+        </div>
+        <h3>Traslochi residenziali</h3>
+        <p>Trasferiamo la tua casa con cura e rispetto per i tuoi oggetti, piccolo appartamento o villa che sia.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <span aria-hidden="true">💼</span>
+        </div>
+        <h3>Traslochi aziendali</h3>
+        <p>Uffici, negozi, magazzini. Organizziamo tutto per minimizzare i tempi di fermo della tua attività.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <span aria-hidden="true">📦</span>
+        </div>
+        <h3>Imballaggio professionale</h3>
+        <p>Materiali di qualità e tecnica corretta per proteggere ogni oggetto, dai quadri ai piatti più delicati.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <span aria-hidden="true">🏠</span>
+        </div>
+        <h3>Sgomberi e svuotamenti</h3>
+        <p>Cantine, mansarde, appartamenti. Sgomberiamo rapidamente e smaltendo il tutto in modo corretto.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <span aria-hidden="true">🗄️</span>
+        </div>
+        <h3>Deposito e custodia</h3>
+        <p>Hai bisogno di tempo? I tuoi mobili sono al sicuro nel nostro deposito, per il periodo che ti serve.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <span aria-hidden="true">🛠️</span>
+        </div>
+        <h3>Montaggio mobili</h3>
+        <p>Smontiamo e rimontiamo ogni tipo di mobile, compreso Ikea. Tutto pronto nella nuova casa.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- COME FUNZIONA -->
+<section id="come-funziona">
+  <div class="container">
+    <!-- AMICO QUOTE BANNER -->
+    <div style="background: #FEF3EC; border-left: 5px solid var(--orange); border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 3.5rem; display: flex; gap: 1.25rem; align-items: flex-start;">
+      <span style="font-size: 2.5rem; line-height: 1;">🤜🤛</span>
+      <div>
+        <p style="font-size: 1.15rem; font-weight: 700; color: var(--orange-dark); margin-bottom: 0.3rem;">"Un amico ti aiuta a traslocare. Un vero amico lo fa senza romperti le scatole."</p>
+        <p style="font-size: 0.88rem; color: var(--gray);">Noi ci impegniamo ad essere entrambe le cose — e anche a imballarle bene, quelle scatole.</p>
+      </div>
+    </div>
+    <h2 class="section-title">Trasloco in 4 passi</h2>
+    <p class="section-sub">Rendiamo tutto chiaro e prevedibile, così sai esattamente a cosa andare incontro.</p>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h3>Contattaci</h3>
+        <p>Chiamaci, scrivici su WhatsApp o compila il modulo online. Rispondiamo entro poche ore.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h3>Sopralluogo gratuito</h3>
+        <p>Valutiamo il lavoro di persona o via foto/video per darti un preventivo preciso, senza sorprese.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h3>Pianifichiamo tutto</h3>
+        <p>Decidiamo insieme data e modalità. Ci occupiamo di imballaggi e organizzazione.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <h3>Trasloco completato</h3>
+        <p>Il team arriva puntuale, lavora in modo professionale e lascia tutto in ordine nella nuova sede.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERCHÉ NOI -->
+<section id="perche-noi">
+  <div class="container">
+    <div class="why-grid">
+      <div>
+        <div class="section-label">La differenza dell'amico</div>
+        <h2 class="section-title">Non un'impresa qualunque.<br>Il tuo amico in Ticino e in Svizzera.</h2>
+        <p class="section-sub">Un amico non sparisce dopo il preventivo. Ti risponde al telefono, arriva puntuale e tratta i tuoi oggetti come i suoi.</p>
+        <div class="why-features">
+          <div class="why-feature">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="why-feature-text">
+              <h4>Massima cura dei tuoi beni — perché gli amici trattano tutto con rispetto</h4>
+              <p>Proteggiamo mobili, scatole e oggetti fragili con attenzione in ogni fase del trasloco.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="why-feature-text">
+              <h4>Puntualità — un amico non ti fa aspettare sul marciapiede</h4>
+              <p>Arriviamo all'ora concordata. Sempre. Il tuo tempo vale quanto il nostro.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            </div>
+            <div class="why-feature-text">
+              <h4>Nessuna sorpresa in fattura — gli amici non ti fregano</h4>
+              <p>Preventivo chiaro, prezzo fisso. Nessun extra nascosto a lavoro finito. Parola d'amico.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <div class="why-feature-text">
+              <h4>Team che conosce il Ticino — non stranieri alla prima curva di Lugano</h4>
+              <p>Strade strette, scale ripide, portoni bassi: li conosciamo tutti. Siamo di qui.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-visual">
+        <img src="logo.png" alt="L'amico dei traslochi" class="why-visual-logo" onerror="this.style.display='none'">
+        <h3>L'amico dei traslochi</h3>
+        <p>Professionalità con il sorriso in Ticino e in tutta la Svizzera</p>
+        <div class="why-visual-stats">
+          <div class="why-visual-stat">
+            <strong>🚚</strong>
+            <span>Traslochi per privati<br>Case, appartamenti e ville.</span>
+          </div>
+          <div class="why-visual-stat">
+            <strong>📦</strong>
+            <span>Traslochi aziendali<br>Uffici, negozi e aziende.</span>
+          </div>
+          <div class="why-visual-stat">
+            <strong>🛠️</strong>
+            <span>Smontaggio e montaggio<br>Ci occupiamo di tutto noi.</span>
+          </div>
+          <div class="why-visual-stat">
+            <strong>📍</strong>
+            <span>Ticino e tutta la Svizzera<br>Servizio rapido e puntuale.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ZONE COPERTE -->
+<section id="zone">
+  <div class="container">
+    <div class="section-label">Dove operiamo</div>
+    <h2 class="section-title">Ticino e tutta la Svizzera</h2>
+    <p class="section-sub">Operiamo in tutto il Canton Ticino, dai grandi centri ai piccoli paesi di montagna, e organizziamo traslochi in tutta la Svizzera.</p>
+    <div class="zone-grid">
+      <div class="zone-card"><div class="zone-dot"></div>Lugano</div>
+      <div class="zone-card"><div class="zone-dot"></div>Bellinzona</div>
+      <div class="zone-card"><div class="zone-dot"></div>Locarno</div>
+      <div class="zone-card"><div class="zone-dot"></div>Mendrisio</div>
+      <div class="zone-card"><div class="zone-dot"></div>Chiasso</div>
+      <div class="zone-card"><div class="zone-dot"></div>Biasca</div>
+      <div class="zone-card"><div class="zone-dot"></div>Giubiasco</div>
+      <div class="zone-card"><div class="zone-dot"></div>Muralto</div>
+      <div class="zone-card"><div class="zone-dot"></div>Ascona</div>
+      <div class="zone-card"><div class="zone-dot"></div>Minusio</div>
+      <div class="zone-card"><div class="zone-dot"></div>Agno</div>
+      <div class="zone-card"><div class="zone-dot"></div>Stabio</div>
+      <div class="zone-card"><div class="zone-dot"></div>Manno</div>
+      <div class="zone-card"><div class="zone-dot"></div>Pregassona</div>
+      <div class="zone-card"><div class="zone-dot"></div>Lugaggia</div>
+      <div class="zone-card"><div class="zone-dot"></div>Gordola</div>
+      <div class="zone-card"><div class="zone-dot"></div>Tenero</div>
+      <div class="zone-card"><div class="zone-dot"></div>Camorino</div>
+      <div class="zone-card"><div class="zone-dot"></div>Arbedo</div>
+      <div class="zone-card"><div class="zone-dot"></div>Tutto il Ticino ✓</div>
+      <div class="zone-card"><div class="zone-dot"></div>Tutta la Svizzera ✓</div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIANZE -->
+<section id="testimonianze">
+  <div class="container">
+    <div class="section-label">Recensioni verificate</div>
+    <h2 class="section-title">Cosa dicono i nostri clienti</h2>
+    <p class="section-sub">Oltre 500 famiglie e aziende in Ticino e in Svizzera ci hanno scelto. Ecco alcune delle loro esperienze.</p>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <blockquote>"Trasloco da Lugano a Bellinzona completato in mezza giornata. Professionali, veloci e gentilissimi. Hanno smontato e rimontato tutti i mobili senza un graffio. Consigliato al 100%!"</blockquote>
+        <div class="reviewer">
+          <div class="reviewer-avatar">MR</div>
+          <div class="reviewer-info">
+            <strong>Marco R.</strong>
+            <span>Trasloco residenziale – Lugano</span>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <blockquote>"Ho usato il loro servizio di sgombero per la cantina di mia madre. Sono venuti in giorno e ore concordati, hanno portato via tutto e lasciato il locale pulito. Prezzo onesto e preventivo rispettato."</blockquote>
+        <div class="reviewer">
+          <div class="reviewer-avatar">SA</div>
+          <div class="reviewer-info">
+            <strong>Silvia A.</strong>
+            <span>Sgombero cantina – Locarno</span>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <blockquote>"Abbiamo traslocato il nostro ufficio di 20 persone senza interrompere l'attività. Il team ha lavorato nel fine settimana, tutto puntuale e organizzato. Non avrei potuto chiedere di meglio."</blockquote>
+        <div class="reviewer">
+          <div class="reviewer-avatar">LF</div>
+          <div class="reviewer-info">
+            <strong>Luca F.</strong>
+            <span>Trasloco aziendale – Bellinzona</span>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <blockquote>"La cosa che ho apprezzato di più è la trasparenza: il preventivo era dettagliato e alla fine ho pagato esattamente quella cifra. Team simpatico e molto attento agli oggetti fragili."</blockquote>
+        <div class="reviewer">
+          <div class="reviewer-avatar">AC</div>
+          <div class="reviewer-info">
+            <strong>Anna C.</strong>
+            <span>Trasloco residenziale – Chiasso</span>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <blockquote>"Ci siamo affidati a loro per il trasloco internazionale da Lugano a Milano. Perfetti: documentazione, tempi, imballaggi. Tutto curato nei minimi dettagli."</blockquote>
+        <div class="reviewer">
+          <div class="reviewer-avatar">GT</div>
+          <div class="reviewer-info">
+            <strong>Gianni T.</strong>
+            <span>Trasloco internazionale – Lugano</span>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <blockquote>"Servizio deposito fantastico. Ho avuto bisogno di tenere i mobili per 3 mesi durante la ristrutturazione. Tutto tornato in perfette condizioni. Li richiamo sicuramente."</blockquote>
+        <div class="reviewer">
+          <div class="reviewer-avatar">FB</div>
+          <div class="reviewer-info">
+            <strong>Federica B.</strong>
+            <span>Servizio deposito – Mendrisio</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATTI / CTA -->
+<section id="contatti">
+  <div class="container">
+    <div class="section-label">Contattaci ora</div>
+    <h2 class="section-title">Chiama il tuo amico<br>dei traslochi</h2>
+    <p class="section-sub">Non un call center. Non un bot. Risponde una persona vera, che conosce il tuo nome e il tuo indirizzo. Preventivo gratuito entro 24 ore.</p>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+        </div>
+        <strong>Telefono</strong>
+        <a href="tel:+41762644543">+41 76 264 45 43</a>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </div>
+        <strong>WhatsApp</strong>
+        <a href="https://wa.me/41762644543?text=Buongiorno!%20ho%20trovato%20il%20vostro%20sito%20e%20vorrei%20un%20preventivo%20per%20un%20trasloco.%0A%0A-%20Partenza%3A%0A-%20Destinazione%3A%0A-%20Data%20indicativa%3A%0A-%20Tipo%20di%20abitazione%3A%0A-%20Note%3A" target="_blank" rel="noopener">Scrivi ora</a>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <strong>Email</strong>
+        <a href="mailto:info@lamicodetraslochi.ch">info@lamicodetraslochi.ch</a>
+      </div>
+          </div>
+
+    <div class="form-section">
+      <h3>Richiedi il tuo preventivo gratuito</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nome">Nome e cognome</label>
+          <input type="text" id="nome" name="nome" placeholder="Mario Rossi">
+        </div>
+        <div class="form-group">
+          <label for="telefono">Telefono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="+41 76 264 45 43">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="mario@esempio.ch">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="servizio">Tipo di servizio</label>
+          <select id="servizio" name="servizio">
+            <option value="">Seleziona servizio</option>
+            <option>Trasloco residenziale</option>
+            <option>Trasloco aziendale</option>
+            <option>Sgombero / svuotamento</option>
+            <option>Imballaggio professionale</option>
+            <option>Deposito e custodia</option>
+            <option>Montaggio mobili</option>
+            <option>Altro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="data">Data prevista</label>
+          <input type="date" id="data" name="data">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="da">Partenza</label>
+          <input type="text" id="da" name="da" placeholder="Es. Lugano">
+        </div>
+        <div class="form-group">
+          <label for="a">Destinazione</label>
+          <input type="text" id="a" name="a" placeholder="Es. Bellinzona">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="abitazione">Tipo di abitazione</label>
+        <input type="text" id="abitazione" name="abitazione" placeholder="Es. appartamento 3 locali, villa, ufficio">
+      </div>
+      <div class="form-group">
+        <label for="messaggio">Descrivi brevemente il tuo trasloco</label>
+        <textarea id="messaggio" name="messaggio" placeholder="Es. Appartamento 3 locali a Lugano, piano 3° con ascensore, trasloco a Bellinzona…"></textarea>
+      </div>
+      <button type="button" class="form-submit" onclick="handleSubmit()">
+        Invia richiesta preventivo →
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/41762644543?text=Buongiorno!%20ho%20trovato%20il%20vostro%20sito%20e%20vorrei%20un%20preventivo%20per%20un%20trasloco.%0A%0A-%20Partenza%3A%0A-%20Destinazione%3A%0A-%20Data%20indicativa%3A%0A-%20Tipo%20di%20abitazione%3A%0A-%20Note%3A" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contattaci su WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zm-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884zm8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- AMICO MANIFESTO -->
+<div style="background: #0F1923; padding: 4rem 1.5rem; text-align: center;">
+  <div style="max-width: 720px; margin: 0 auto;">
+    <p style="font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--orange); margin-bottom: 1rem;">Il nostro manifesto</p>
+    <h2 style="font-size: clamp(1.5rem, 4vw, 2.4rem); font-weight: 800; color: #fff; line-height: 1.25; margin-bottom: 1.5rem;">
+      Esistiamo perché un trasloco<br>non dovrebbe mai farti sentire solo.
+    </h2>
+    <p style="color: rgba(255,255,255,0.65); font-size: 1rem; line-height: 1.75; margin-bottom: 2rem;">
+      Abbiamo scelto di chiamarci <strong style="color: #fff;">"l'amico"</strong> perché è quello che vogliamo essere davvero.
+      Non un'impresa che ottimizza i turni e conta i minuti,
+      ma qualcuno che capisce cosa significa lasciare una casa, iniziare una nuova vita,
+      o semplicemente avere bisogno di una mano affidabile in un giorno complicato.
+    </p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo-wrap">
+        <img src="logo.png" alt="Logo" class="footer-logo-img" onerror="this.style.display='none'">
+        <span class="footer-brand-name">L'amico dei traslochi</span>
+      </div>
+      <p>Traslochi professionali in Ticino e in tutta la Svizzera.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Servizi</h4>
+      <ul>
+        <li><a href="#servizi">Traslochi residenziali</a></li>
+        <li><a href="#servizi">Traslochi aziendali</a></li>
+        <li><a href="#servizi">Sgomberi</a></li>
+        <li><a href="#servizi">Imballaggio</a></li>
+        <li><a href="#servizi">Deposito</a></li>
+        <li><a href="#servizi">Montaggio mobili</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contatti</h4>
+      <ul>
+        <li><a href="tel:+41762644543">+41 76 264 45 43</a></li>
+        <li><a href="mailto:info@lamicodetraslochi.ch">info@lamicodetraslochi.ch</a></li>
+        <li><a href="#zone">Zone coperte</a></li>
+        <li><a href="#contatti">Preventivo gratuito</a></li>
+        <li><a href="privacy-policy.html">Privacy policy</a></li>
+        <li><a href="termini-e-condizioni.html">Termini e condizioni</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 L'amico dei traslochi - Ticino e Svizzera</p>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('main-nav');
+    nav.classList.toggle('open');
+  }
+
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('main-nav').classList.remove('open');
+    });
+  });
+
+  function handleSubmit() {
+    const nome = document.getElementById('nome').value.trim();
+    const telefono = document.getElementById('telefono').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const servizio = document.getElementById('servizio').value.trim();
+    const da = document.getElementById('da').value.trim();
+    const a = document.getElementById('a').value.trim();
+    const data = document.getElementById('data').value.trim();
+    const abitazione = document.getElementById('abitazione').value.trim();
+    const messaggio = document.getElementById('messaggio').value.trim();
+    if (!nome || !telefono || !email) {
+      alert('Per favore compila almeno nome, telefono ed email.');
+      return;
+    }
+    const whatsappMessage = [
+      'Buongiorno! ho trovato il vostro sito e vorrei un preventivo per un trasloco.',
+      '',
+      `Nome: ${nome}`,
+      `Telefono: ${telefono}`,
+      `Email: ${email}`,
+      `Servizio: ${servizio || '-'}`,
+      `- Partenza: ${da || '-'}`,
+      `- Destinazione: ${a || '-'}`,
+      `- Data indicativa: ${data || '-'}`,
+      `- Tipo di abitazione: ${abitazione || '-'}`,
+      `- Note: ${messaggio || '-'}`
+    ].join('\n');
+    window.open(`https://wa.me/41762644543?text=${encodeURIComponent(whatsappMessage)}`, '_blank', 'noopener');
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.style.opacity = 1; e.target.style.transform = 'translateY(0)'; }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll('.service-card, .step-card, .review-card, .zone-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
